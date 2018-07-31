@@ -32,8 +32,10 @@ bintray {
     key = project.findProperty("bintrayKey")
 
     pkg {
-        repo = 'maven'
+        repo = 'maven-repo'
         name = project.name
+        licenses = [ project.license ]
+        vcsUrl = project.url
     }
     configurations = ['archives']
 

@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'idea'
     id 'maven'
-    id "com.jfrog.bintray" version "1.0"
+    id "com.jfrog.bintray" version "1.4"
 }
 
 assert gradle.gradleVersion == '2.14'
@@ -10,11 +10,11 @@ assert gradle.gradleVersion == '2.14'
 sourceCompatibility = '1.8'
 
 group = 'io.pivotal.labs'
-version = '0.0.1'
+version = '0.0.2'
 
 description = file('README.adoc').readLines()[0]
 ext.vendor = 'Pivotal Labs'
-ext.url = 'https://github.com/pivotal/cf-env'
+ext.url = 'https://github.com/pivotal-kaveh/cf-env'
 ext.license = 'BSD 2-Clause'
 
 apply from: 'release.gradle'
